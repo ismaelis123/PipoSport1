@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipo Sport</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pipo Sport</h1>
+        <nav>
+            <button id="home-button">Inicio</button>
+            <button id="products-button">Productos</button>
+            <button id="contact-button">Contacto</button>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenido a Pipo Sport</h2>
+            <p>Encuentra los mejores productos para tu deporte favorito.</p>
+            <p>Ofrecemos una amplia variedad de productos de fútbol: balones, zapatillas, camisetas y más. Todo lo que necesitas para entrenar y jugar al fútbol lo encontrarás aquí.</p>
+            <p><strong>Nota:</strong> Este sitio está en pruebas, no está terminado y faltan productos por agregar.</p>
+        </section>
+        <section id="products" style="display: none;">
+            <h2>Productos de Fútbol</h2>
+            <div id="product-list">
+                <!-- Aquí se renderizarán los productos -->
+            </div>
+            <section id="cart">
+                <h2>Carrito de Compras</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button">Comprar</button>
+            </section>
+        </section>
+        <section id="contact" style="display: none;">
+            <h2>Contacto</h2>
+            <p>Puedes encontrarnos en nuestras redes sociales:</p>
+            <ul>
+                <li><a href="https://wa.me/58605056" target="_blank">WhatsApp</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100089258300442&mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/_pipo_sports?igsh=eXo4ZDdlcDZpNDFm" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+        <section id="reviews" style="display: none;">
+            <h2>Reseñas del Sitio</h2>
+            <div id="reviews-list">
+                <!-- Aquí se renderizarán las reseñas -->
+            </div>
+            <h3>Deja tu reseña</h3>
+            <form id="review-form">
+                <textarea id="review-text" placeholder="Escribe tu reseña aquí..." required></textarea>
+                <label for="review-rating">Calificación:</label>
+                <select id="review-rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <button type="submit">Enviar Reseña</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/scritp.js"></script>
+</body>
+</html>
+
+
